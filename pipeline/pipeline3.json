@@ -291,10 +291,17 @@
 						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "lnk_customer",
+							"type": "LinkedServiceReference"
+						}
+					},
 					"enableLogging": true,
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"recursive": true,
+						"wildcardFileName": "*.csv",
 						"enablePartitionDiscovery": false
 					}
 				}
