@@ -30,7 +30,8 @@
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
+						"sqlWriterUseTableLock": false,
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -295,7 +296,8 @@
 						"linkedServiceName": {
 							"referenceName": "lnk_customer",
 							"type": "LinkedServiceReference"
-						}
+						},
+						"path": "archive"
 					},
 					"enableLogging": true,
 					"storeSettings": {
